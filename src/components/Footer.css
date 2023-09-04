@@ -1,22 +1,85 @@
 .footer-container {
     background-color: black;
     color: white;
-    padding: 2rem 0 1rem 0;
     position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .links {
     display: grid;
     grid-gap: 20px;
     text-align: center;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
 }
 
+.social-icon-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: transparent;
+    font-size: 25px;
+}
+
+.social-icon-link:hover{
+        transform: rotate(40deg);
+        transition-duration: 0.4s;
+}
+.social-icon-link::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #373737;
+    border-radius: 10px;
+    transition: opasity 0.7s;
+}
+.social-icon-link:hover::before {
+    opacity: 0.4;
+}
+.social-icon-link:nth-child(1)::before {
+    background: #c32aa3;
+}
+.social-icon-link:nth-child(2)::before {
+    background: #1da1f2;
+}
+.social-icon-link:nth-child(3)::before {
+    background: #25d366;
+}
+.social-icon-link:nth-child(4)::before {
+    background: red;
+}
+
+.social-icon-link:hover::before {
+    transform: translate(-4px, -4px);
+    filter: blur(10px);
+}
+.social-icon-link i {
+    font-size: 1.7em;
+    transition: all 0.4s;
+}
+.social-icon-link:hover i {
+    transform: rotate(-45deg);
+}
+
+.social-icon-link:hover i.fa-linkedin {
+    color: #c32aa3;
+}
+.social-icon-link:hover i.fa-github {
+    color: #1da1f2;
+}
+.social-icon-link:hover i.fa-facebook {
+    color: #25d366;
+}
+.link:hover i.fa-address-book {
+    color: red;
+    background-color: red;
+}
 :root {
     background-color: black;
 }

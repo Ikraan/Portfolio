@@ -19,7 +19,7 @@ const Profile = () => {
             But beyond my technical endeavors, I am a wanderlust at heart. I have an immense passion for traveling and sightseeing, always eager to explore and experience new horizons. 
             I genuinely believe that there's unparalleled joy in discovering novel places and experiences. If you're interested in reaching out, whether for collaborations, inquiries, or simply to connect, please don't hesitate to send me an email. 
             I'm always open for a chat. Thank you so much for stopping by. Together, let's embark on a journey towards building and coding a brighter, more innovative future! </p>
-                <Link><button className="btn1"> <img src="Images/message.png" alt="msgIcon" className="btnImg"/>Contact Me</button></Link>
+                {/* <Link to='mailto:Ikraan-Ahmed@outlook.com'><button className="btn1"> <img src="Images/message.png" alt="msgIcon" className="btnImg"/>Contact Me</button></Link> */}
             </div> 
             <div className="profileImg">
               <img src="Images/ikraanPhoto.png" alt="ProfilePic"></img>   

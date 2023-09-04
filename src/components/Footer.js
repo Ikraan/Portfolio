@@ -5,16 +5,46 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
+    <>
     <div className='footer-container'>
       <section className='foot-subcription'></section>
       <p className='footer-sub-heading'>
       You can contact me via: </p>
-      <section className='links'>
-      <Link><a href='https://www.linkedin.com/in/ikraanahmed/'> <img src="Images/linkedin.jpg" alt="inIcon" className="btnImg"/></a></Link>
-      <Link><a href="https://github.com/Ikraan"> <img src="Images/github.png" alt="gitIcon" className="btnImg"/></a></Link> 
-      <Link> <a href='mailto:Ikraan-Ahmed@outlook.com/'> <img src="Images/email.jpg" alt="msgIcon" className="btnImg" /></a></Link>
-      </section>
+
+      <ul className='links'>
+        <Link 
+        className='social-icon-link linkedin'
+        to='https://www.linkedin.com/in/ikraanahmed/'
+        target='_blank'
+        aria-label='Linkedin' >
+          <i className='fab fa-linkedin'/>
+        </Link>
+        <Link 
+        className='social-icon-link github'
+        to='https://github.com/Ikraan/'
+        target='_blank'
+        aria-label='Github' >
+          <i className='fab fa-github'/>
+        </Link>
+        <Link 
+        className='social-icon-link facebook'
+        to='https://www.facebook.com/ikraam.ahmed.9/'
+        target='_blank'
+        aria-label='Facebook' >
+          <i className='fab fa-facebook'/>
+        </Link>
+        <Link 
+        className='social-icon-link address-book'
+        to='mailto:Ikraan-Ahmed@outlook.com'
+        target='_blank'
+        aria-label='microsoft' >
+          <i className='fa fa-address-book'/>
+          
+        </Link>
+       
+      </ul>
     </div>
+    </> 
   )
 }
 

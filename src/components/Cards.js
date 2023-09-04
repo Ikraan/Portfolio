@@ -6,7 +6,7 @@ import './Cards.css';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Checkout my projects!</h1>
+      <h1>Checkout my projects: </h1>
       <div className='cards-container'>
         <div className='cards-wrapper'>
             <ul className='cards-items'>
@@ -24,12 +24,12 @@ function Cards() {
                 />
             </ul>
             <ul className='cards-items'>
-                <CardItem 
+                {/* <CardItem 
                 src='Images/pproject.jpeg'
                 text='📌 Personal Project'
                 label='Project'
                 path='/projects' 
-                />
+                /> */}
                 <CardItem 
                 src='Images/tictactoe.jpeg'
                 text='📌  Personal Project'
